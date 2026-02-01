@@ -1,9 +1,13 @@
 import React from 'react'
+import TopHeader from '../components/shared/TopHeader'
 
 function MainLayout() {
   return (
-    <div className='w-full '>
-      <div className='w-full h-20 bg-slate-300 '>aaaaa</div>
+    <div className='w-full bg-slate-200 h-screen '>
+      {/* <div className='w-full h-10 bg-[#532b10]'>
+        
+      </div> */}
+      <TopHeader/>
 
     </div>
   )
