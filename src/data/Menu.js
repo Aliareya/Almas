@@ -1,16 +1,16 @@
 const menu = [
-   { title: "تماس باما", path: "/تماس" },
-   { title: "لباس مجلسی", path: "/فروشگاه" },
-   { title: "فروشگاه", path: "/فروشگاه" },
-   { title: "درباره ما", path: "/درباره-ما" },
+   { title: "تماس باما", path: "/contact" },
+   { title: "لباس مجلسی", path: "/shop" },
+   { title: "فروشگاه", path: "/shop" },
+   { title: "درباره ما", path: "/about" },
    { title: "خانه", path: "/" },
 ];
 
 const iconMenu = [
-   {icon : "lineicons:cart-1" , path : '/cart'}, 
+   {icon : "iconamoon:profile-circle-light" , path : '/profile'},
    {icon : "bitcoin-icons:search-filled" , path : '/serach'},
    {icon : "iconamoon:heart-light" , path : '/wishlist'},
-   // {icon : "iconamoon:profile-circle-light" , path : '/profile'},
+   {icon : "lineicons:cart-1" , path : '/cart'}, 
 ]
 
 const companypages = [

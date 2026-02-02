@@ -22,6 +22,7 @@ function Logo() {
     hover:scale-105
     transition-transform duration-300
     inline-block
+    pb-1
   "
 >
   الماس
