@@ -1,22 +1,20 @@
 import { Icon } from "@iconify/react";
+import Logo from "../ui/Logo";
+import Menu from "../sections/Menu";
 
 function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/85 backdrop-blur border-b border-neutral-200">
-      <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto h-20 px-16 flex-row-reverse flex items-center justify-between">
 
         {/* Left - Logo */}
         <div className="text-2xl font-serif tracking-wide text-brown-dark">
-          ALMAS
+           <Logo/>
         </div>
 
         {/* Center - Navigation */}
         <nav className="hidden md:flex gap-10 text-sm font-medium text-neutral-700">
-          <a href="#" className="hover:text-brown-dark transition">Home</a>
-          <a href="#" className="hover:text-brown-dark transition">Shop</a>
-          <a href="#" className="hover:text-brown-dark transition">Collections</a>
-          <a href="#" className="hover:text-brown-dark transition">About</a>
-          <a href="#" className="hover:text-brown-dark transition">Contact</a>
+          <Menu/>
         </nav>
 
         {/* Right - Icons */}

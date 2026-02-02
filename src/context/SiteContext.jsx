@@ -1,8 +1,11 @@
 import { useContext , createContext , useState  } from "react";
-import {siteData} from "../data/sitedata"
+import {siteData} from "../data/sitedata";
+import menus from "../data/Menu";
 
 const data = {
-   site : siteData
+   site : siteData,
+   headerMenu : menus.headermenu,
+   headerIconMenu : menus.headerIconMenu
 }
 
 const SiteContext = createContext();
