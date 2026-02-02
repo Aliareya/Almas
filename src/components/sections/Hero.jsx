@@ -6,7 +6,7 @@ import AnimationButton from "../ui/AnimationButton";
 function Hero() {
   return (
     <div
-      className="relative w-full lg:h-[470px] max-sm:h-[400px] max-md:h-[420px] md:h-[400px] bg-center bg-cover overflow-hidden"
+      className="relative w-full lg:h-[470px] max-sm:h-[470px] max-md:h-[420px] md:h-[400px] bg-center bg-cover overflow-hidden"
       style={{ backgroundImage: `url(${herobg})` }}
     >
       {/* Gradient Overlay */}
@@ -35,7 +35,7 @@ function Hero() {
           transition={{ duration: 1.1, delay: 0.3, ease: "easeOut" }}
           className="
     relative
-    xl:text-7xl text-5xl
+    xl:text-7xl text-7xl max-sm:text-7xl
     font-extrabold
     tracking-wider
     mt-3
@@ -48,6 +48,7 @@ function Hero() {
     animate-shimmer
     hover:scale-105
     transition-transform duration-300
+    pb-2
   "
         >
           الماس
