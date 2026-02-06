@@ -9,6 +9,7 @@ function AnimationTitle({text}) {
       transition={{ duration: 1, ease: "easeOut" }}
       className="
     relative
+    cursor-pointer
     text-xl
     font-extrabold
     tracking-wider

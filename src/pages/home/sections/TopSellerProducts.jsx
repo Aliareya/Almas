@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import ProductCard from "../../../components/cards/ProductCard";
+import img2 from "../../../images/img2.jpg"
+import img3 from "../../../images/img4.jpg"
 
 const products = [
   {
@@ -40,8 +42,17 @@ export default function TopSellerProducts() {
     <section className="max-w-7xl mx-auto px-16 py-5">
       {/* Header */}
       <p className="text-sm text-gray-500 text-right ">محصولات ما</p>
-      <div className="flex justify-between flex-row-reverse mt-5">
-        <h2 className="text-3xl font-bold text-right">پرفروش‌ترین محصول</h2>
+      <div className="flex flex-row-reverse items-center justify-between  mt-5">
+        <h2 className="pb-5
+  text-4xl font-extrabold
+  text-transparent bg-clip-text
+  bg-gradient-to-r
+  from-[#ae8b52]
+  via-[#e2ae68]
+  to-[#b97a38]
+">
+ پرفروش‌ترین محصول ما
+</h2>
         <div className="flex gap-3 mb-8">
         {["All", "Women", "Men", "Accessories"].map((item) => (
           <button
@@ -62,9 +73,9 @@ export default function TopSellerProducts() {
       
 
       {/* Products */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-        <ProductCard/>
-        <ProductCard/>
+      <div className="flex justify-between gap-5">
+        <ProductCard img={img2}/>
+        <ProductCard img={img3}/>
         <ProductCard/>
       </div>
     </section>

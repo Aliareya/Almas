@@ -1,14 +1,87 @@
 import React from "react";
+import img2 from '../../../images/img2.jpg'
+import img5 from '../../../images/img5.jpg'
+import img6 from '../../../images/img6.jpg'
+import img7 from '../../../images/img7.jpg'
 
 export default function CategorySection() {
   return (
-    <div className="w-full h-80 pt-10 px-16 flex flex-col items-center">
-      {/* <h4 className="text-xl font-bold text-gray-400">محصولات ما</h4> */}
-      <div className="flex w-full justify-between">
-        <div className="w-80 h-10 bg-slate-300"></div>
-        <h4 className="text-xl font-bold">محصولات پرفروش ما</h4>
-      </div>
+    <section className="w-full mx-auto px-16 py-12">
+      <div className="flex gap-10">
 
-    </div>
+        {/* Women */}
+        <div
+          className="w-3/5 relative rounded-3xl overflow-hidden h-[420px] bg-cover bg-top"
+          style={{
+            backgroundImage:
+              `url(${img2})`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/10" />
+          <div className="relative h-full p-6 flex flex-col justify-end text-right">
+            <span className="text-sm text-gray-200 mb-2">۲۵۰۰+ محصول</span>
+            <h2 className="text-3xl font-bold text-white mb-3">
+              لباس زنانه
+            </h2>
+            <ul className="text-sm text-gray-100 space-y-1">
+              <li>پیراهن</li>
+              <li>مانتو</li>
+              <li>کت و کاپشن</li>
+              <li>لباس مجلسی</li>
+              <li>اکسسوری</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="w-[40%] flex items-end flex-col gap-6">
+
+          {/* Men */}
+          <div
+            className="w-full rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
+            style={{
+              backgroundImage:
+                `url(${img7})`,
+            }}
+          >
+            <div className="absolute inset-0 bg-black/10" />
+            <div className="relative h-full p-5 flex flex-col justify-end text-right">
+              <span className="text-sm text-gray-200 mb-1">
+                ۱۵۰۰+ محصول
+              </span>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                لباس مردانه
+              </h2>
+              <p className="text-sm text-gray-100">
+                تی‌شرت، پیراهن، کت و شلوار
+              </p>
+            </div>
+          </div>
+
+          {/* Accessories */}
+          <div
+            className="w-full rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
+            style={{
+              backgroundImage:
+                `url(${img6})`,
+            }}
+          >
+            <div className="absolute inset-0 bg-black/10" />
+            <div className="relative h-full p-5 flex flex-col justify-end text-right">
+              <span className="text-sm text-gray-200 mb-1">
+                ۸۰۰+ محصول
+              </span>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                اکسسوری
+              </h2>
+              <p className="text-sm text-gray-100">
+                کیف، ساعت، عینک، کلاه
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   );
 }
