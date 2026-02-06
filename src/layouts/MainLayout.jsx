@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function MainLayout() {
   return (
-    <div className='w-full bg-gray-100  '>
+    <div className='w-full bg-[#e9e4e1]  '>
       <TopHeader/>
       <Header/>
       <div className='w-full'>

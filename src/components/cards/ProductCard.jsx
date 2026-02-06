@@ -19,15 +19,15 @@ function ProductCardFa() {
       </div>
 
       {/* تصاویر کوچک */}
-      {/* <div className="flex flex-row-reverse items-center gap-2 mt-3">
-        <img className="w-12 h-12 rounded-lg border object-contain"
+      <div className="flex flex-row-reverse items-center gap-2 mt-3">
+        <img className="w-7 h-7 -ml-5 rounded-full "
           src={img1}/>
-        <img className="w-12 h-12 rounded-lg border border-orange-400 object-contain"
+        <img className="w-7 h-7 -ml-5 rounded-full object-contain"
           src={img1} />
-        <img className="w-12 h-12 rounded-lg border object-contain"
+        <img className="w-7 h-7  rounded-full border object-contain"
           src={img1} />
         <span className="text-sm text-orange-500 font-medium">+۲</span>
-      </div> */}
+      </div>
 
       {/* اطلاعات محصول */}
       <div className="mt-4 text-right">
@@ -44,15 +44,15 @@ function ProductCardFa() {
 
       {/* دکمه‌ها */}
       <div className="mt-4 flex flex-row-reverse items-center gap-3">
-        <button className="flex-1 border border-orange-900  py-2 rounded-lg font-medium  transition">
+        <button className="flex-1 border border-orange-900 hover:bg-slate-100  py-2 rounded-lg font-medium  transition">
          جزییات محصول
         </button>
 
-        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-orange-100 transition">
+        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-gray-100 transition">
           <Icon icon="mdi:heart-outline" className="text-red-950 text-xl" />
         </button>
-        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-orange-100 transition">
-          <Icon icon="mdi:heart-outline" className="text-red-950 text-xl" />
+        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-gray-100 transition">
+          <Icon icon="mdi:cart-outline" className="text-red-950 text-xl" />
         </button>
       </div>
     </div>

@@ -37,15 +37,12 @@ const products = [
 
 export default function TopSellerProducts() {
   return (
-    <section className="max-w-7xl mx-auto px-16 py-16">
+    <section className="max-w-7xl mx-auto px-16 py-5">
       {/* Header */}
-      <div className="mb-10">
-        <p className="text-sm text-gray-500">Our Products</p>
-        <h2 className="text-3xl font-bold">Our Top Seller Products</h2>
-      </div>
-
-      {/* Filters */}
-      <div className="flex gap-3 mb-8">
+      <p className="text-sm text-gray-500 text-right ">محصولات ما</p>
+      <div className="flex justify-between flex-row-reverse mt-5">
+        <h2 className="text-3xl font-bold text-right">پرفروش‌ترین محصول</h2>
+        <div className="flex gap-3 mb-8">
         {["All", "Women", "Men", "Accessories"].map((item) => (
           <button
             key={item}
@@ -59,6 +56,10 @@ export default function TopSellerProducts() {
           </button>
         ))}
       </div>
+      </div>
+
+      {/* Filters */}
+      
 
       {/* Products */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
