@@ -7,19 +7,25 @@ import img2 from "../../images/img2.jpg";
 import img3 from "../../images/img3.jpg";
 
 function ProductCardFa({
+  product =null,
   img = img1,
   price = "2,450,000",
   oldPrice = "3,100,000",
 }) {
   return (
-    <div className="md:w-1/3 max-sm:w-full bg-white rounded-3xl shadow-lg p-4 font-sans">
+    <div className="md:w-1/3 max-sm:w-full bg-[#efe7e2] rounded-3xl shadow-lg p-4 font-sans">
 
       {/* تصویر محصول */}
       <div
         className="
           relative
           w-full
-          h-80
+          xl:h-72
+          lg:h-64
+          md:h-52
+          max-md:h-52
+          max-sm:h-52
+
           rounded-2xl
           overflow-hidden
           bg-top
@@ -27,7 +33,7 @@ function ProductCardFa({
           bg-cover
           bg-[#f8f8f8]
         "
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${product.image})` }}
       >
         {/* Overlay ملایم */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
@@ -36,7 +42,7 @@ function ProductCardFa({
         <div className="
           absolute
           bottom-4
-          left-4
+          right-2
           bg-white/90
           backdrop-blur
           rounded-xl
@@ -45,11 +51,8 @@ function ProductCardFa({
           text-right
           shadow
         ">
-          <span className="block text-xs text-gray-400 line-through">
-            {oldPrice} تومان
-          </span>
           <span className="block text-sm font-bold text-red-900">
-            {price} تومان
+            {product.price} 
           </span>
         </div>
       </div>
@@ -65,7 +68,7 @@ function ProductCardFa({
       {/* عنوان محصول */}
       <div className="mt-4 text-right">
         <h3 className="text-base font-semibold text-gray-800 leading-7">
-          <AnimationTitle text="کفش زنانه نایکی ایر مکس ۲۷۰" />
+          <AnimationTitle text={product.name} />
         </h3>
       </div>
 
@@ -73,10 +76,14 @@ function ProductCardFa({
       <div className="mt-4 flex flex-row-reverse items-center gap-3">
         <button
           className="
-            flex-1
             border
             border-orange-900
-            py-2
+            py-2 
+            px-4
+            flex-1
+            max-sm:flex-1
+            lg:text-base
+            md:text-[10px]
             rounded-xl
             font-medium
             hover:bg-orange-50
@@ -86,11 +93,11 @@ function ProductCardFa({
           جزییات محصول
         </button>
 
-        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-gray-100 transition">
+        <button className="w-10 h-10 border border-red-900 rounded-xl flex items-center justify-center hover:bg-orange-50 transition">
           <Icon icon="mdi:heart-outline" className="text-red-900 text-xl" />
         </button>
 
-        <button className="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-gray-100 transition">
+        <button className="w-10 h-10 border border-red-900 rounded-xl flex items-center justify-center hover:bg-orange-50 transition">
           <Icon icon="mdi:cart-outline" className="text-red-900 text-xl" />
         </button>
       </div>

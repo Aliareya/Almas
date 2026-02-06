@@ -6,12 +6,12 @@ import img7 from '../../../images/img7.jpg'
 
 export default function CategorySection() {
   return (
-    <section className="w-full mx-auto px-16 py-12">
-      <div className="flex gap-10">
+    <section className="w-full mx-auto xl:px-16 lg:px-14 max-sm:px-3 md:px-6 max-md:px-6 max-sm:py-5  py-12">
+      <div className="flex flex-row max-sm:flex-col gap-10">
 
         {/* Women */}
         <div
-          className="w-3/5 relative rounded-3xl overflow-hidden h-[420px] bg-cover bg-top"
+          className="w-3/5 max-sm:w-full relative rounded-3xl overflow-hidden h-[420px] max-sm:h-[250px] bg-cover bg-top"
           style={{
             backgroundImage:
               `url(${img2})`,
@@ -34,11 +34,11 @@ export default function CategorySection() {
         </div>
 
         {/* Right Side */}
-        <div className="w-[40%] flex items-end flex-col gap-6">
+        <div className="w-[40%] max-sm:w-full flex items-end flex-col gap-6">
 
           {/* Men */}
           <div
-            className="w-full rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
+            className="w-full relative rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
             style={{
               backgroundImage:
                 `url(${img7})`,
@@ -60,7 +60,7 @@ export default function CategorySection() {
 
           {/* Accessories */}
           <div
-            className="w-full rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
+            className="w-full relative rounded-3xl overflow-hidden h-[200px] bg-cover bg-center"
             style={{
               backgroundImage:
                 `url(${img6})`,
