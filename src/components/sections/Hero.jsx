@@ -1,5 +1,5 @@
 import React from "react";
-import herobg from "../../../public/images/herobg.jpg";
+import herobg from "../../images/herobg.jpg";
 import { motion } from "framer-motion";
 import AnimationButton from "../ui/AnimationButton";
 

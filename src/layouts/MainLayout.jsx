@@ -1,16 +1,21 @@
 import React from 'react'
 import TopHeader from '../components/shared/TopHeader'
 import Header from '../components/shared/Header'
-import herobg from "../../public/images/herobg.jpg"
-import { motion } from "framer-motion";
-import Hero from '../components/sections/Hero';
+import Home from '../pages/home/Home'
+import { Route, Routes } from 'react-router-dom';
 
 function MainLayout() {
   return (
-    <div className='w-full bg-slate-200 h-[900px] '>
+    <div className='w-full bg-gray-100  '>
       <TopHeader/>
       <Header/>
-      <Hero/>
+      <div className='w-full'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+
+        </Routes>
+
+      </div>
   
   
 
