@@ -4,6 +4,7 @@ import CategorySection from './sections/CategorySection'
 import TopSellerProducts from './sections/TopSellerProducts'
 import CommentCard from '../../components/cards/CommentCard'
 import CommentSlider from './sections/CommentSlider'
+import SubscriptionSection from './sections/SubscriptionSection'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <CategorySection/>
       <TopSellerProducts/>
       <CommentSlider/>
+      <SubscriptionSection/>
     </div>
   )
 }

@@ -67,10 +67,11 @@ function ProductCardFa({
       </div>
 
       {/* عنوان محصول */}
-      <div className="mt-4 text-right">
+      <div className="mt-2 text-right">
         <h3 className="text-base font-semibold text-gray-800 leading-7">
           <AnimationText text={product.name} />
         </h3>
+        <p>this is is for me and for you ....</p>
       </div>
 
       {/* دکمه‌ها */}
