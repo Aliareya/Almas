@@ -60,10 +60,10 @@ export default function TopSellerProducts() {
       
 
       {/* Products */}
-      <div className="flex max-sm:flex-col max-md:grid grid-cols-2 max-sm:flex max-md:flex-col justify-between gap-5">
+      <div className="flex max-sm:flex-col max-md:grid grid-cols-3 max-sm:flex max-md:flex-col justify-between gap-5">
         {products.map((product , index)=>{
           return(
-            <ProductCard product={product}/>
+            <ProductCard key={index} product={product}/>
           )
         })}
 

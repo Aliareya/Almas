@@ -5,6 +5,7 @@ import AnimationTitle from "../ui/AnimationTitle";
 import img4 from "../../images/img4.jpg";
 import img2 from "../../images/img2.jpg";
 import img3 from "../../images/img3.jpg";
+import AnimationText from "../ui/AnimationText";
 
 function ProductCardFa({
   product =null,
@@ -68,7 +69,7 @@ function ProductCardFa({
       {/* عنوان محصول */}
       <div className="mt-4 text-right">
         <h3 className="text-base font-semibold text-gray-800 leading-7">
-          <AnimationTitle text={product.name} />
+          <AnimationText text={product.name} />
         </h3>
       </div>
 
@@ -83,7 +84,8 @@ function ProductCardFa({
             flex-1
             max-sm:flex-1
             lg:text-base
-            md:text-[10px]
+            md:text-[13px]
+            max-md:text-[12px]
             rounded-xl
             font-medium
             hover:bg-orange-50

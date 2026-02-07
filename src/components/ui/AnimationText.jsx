@@ -1,15 +1,16 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
 
-function AnimationTitle({text}) {
+function AnimationText({text}) {
   return (
-    <motion.span
+   <motion.span
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       className="
+    relative
     cursor-pointer
-    text-4xl
+    text-xl
     font-extrabold
     tracking-wider
     text-transparent bg-clip-text
@@ -21,12 +22,11 @@ function AnimationTitle({text}) {
     animate-shimmer
     hover:scale-105
     transition-transform duration-300
-    pb-6
   "
     >
      {text}
     </motion.span>
-  );
+  )
 }
 
-export default AnimationTitle;
+export default AnimationText
