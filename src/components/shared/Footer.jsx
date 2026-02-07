@@ -4,12 +4,12 @@ import Logo from "../ui/Logo";
 export default function Footer() {
   return (
     <footer className="bg-[#4B2E2E] text-white lg:px-16 max-sm:px-4 md:px-5 max-md:px-9 py-10 max-sm:py-4">
-      <div className="max-w-7xl max-sm:flex flex-col mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 max-md:grid-cols-4 gap-10">
+      <div className="max-w-7xl flex max-sm:flex-col gap-10  mx-auto ">
 
         {/* لوگو و توضیحات */}
-        <div className="w-full max-sm:flex flex-col items-center ">
+        <div className="w-[30%] max-sm:w-full max-sm:flex flex-col items-center ">
           <Logo/>
-          <p className="text-sm mb-4 max-sm:text-center">
+          <p className="text-sm mb-4 max-sm:mb-4 max-sm:text-center">
             فروشگاه آنلاین پوشاک با جدیدترین مدل‌های لباس زنانه و مردانه،
             کیفیت بالا و قیمت مناسب.
           </p>
@@ -27,8 +27,12 @@ export default function Footer() {
           </div>
         </div>
 
+
+        <div className="w-[90%] max-sm:grid grid-cols-2 max-sm:w-full max-sm:justify-around flex justify-between">
+        
+
         {/* فروشگاه */}
-        <div className="max-sm:text-center">
+        <div className="">
           <h3 className="font-semibold mb-4">فروشگاه</h3>
           <ul className="flex flex-col gap-2 text-sm">
             <li className="hover:text-gray-300 cursor-pointer">درباره ما</li>
@@ -38,8 +42,9 @@ export default function Footer() {
           </ul>
         </div>
 
+
         {/* خدمات مشتریان */}
-        <div className="max-sm:text-center">
+        <div className="">
           <h3 className="font-semibold mb-4">خدمات مشتریان</h3>
           <ul className="flex flex-col gap-2 text-sm">
             <li className="hover:text-gray-300 cursor-pointer">سوالات متداول</li>
@@ -50,7 +55,7 @@ export default function Footer() {
         </div>
 
         {/* اطلاعات ما */}
-        <div className="max-sm:text-center">
+        <div className="max-sm:mt-10">
           <h3 className="font-semibold mb-4">اطلاعات ما</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
@@ -71,6 +76,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
+        </div>
+
       </div>
 
       {/* کپی‌رایت */}
