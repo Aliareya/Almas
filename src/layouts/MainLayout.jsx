@@ -11,7 +11,7 @@ function MainLayout() {
     <div className="w-full bg-[#dfd6d0]  ">
       <TopHeader />
       <Header />
-      <div className="w-full pb-10">
+      <div className="w-full ">
         <AppRoutes />
       </div>
       <Footer/>

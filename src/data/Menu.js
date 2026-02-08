@@ -1,6 +1,7 @@
 const menu = [
+   { title: "ورود", path: "/contact" },
    { title: "تماس باما", path: "/contact" },
-   { title: "لباس مجلسی", path: "/shop" },
+   // { title: "لباس مجلسی", path: "/shop" },
    { title: "فروشگاه", path: "/shop" },
    { title: "درباره ما", path: "/about" },
    { title: "خانه", path: "/" },
