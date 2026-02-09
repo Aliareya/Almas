@@ -1,20 +1,22 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
-function MenuItem({ menu}) {
+function MenuItem({ menu }) {
    const location = useLocation();
    const active = location.pathname === menu.path;
+   const navigate = useNavigate()
   return (
     <motion.li
       whileHover={{ y: -2 }}
       transition={{ type: "spring", stiffness: 300 }}
       className="list-none"
     >
-      <a
-        href={menu?.path}
+      <li
+        onClick={()=>navigate(menu.path)}
         className={`
           relative
+          cursor-pointer
           py-2
           text-sm md:text-base
           font-medium
@@ -40,7 +42,7 @@ function MenuItem({ menu}) {
             group-hover:scale-x-100
           `}
         />
-      </a>
+      </li>
     </motion.li>
   )
 }

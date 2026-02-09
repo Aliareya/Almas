@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       {/* کپی‌رایت */}
-      <div className="mt-10 border-t border-gray-700 pt-4 flex justify-center text-sm">
+      <div className="mt-10 border-t border-gray-300 pt-4 flex justify-center text-sm">
         <p>تمامی حقوق © 2024 طراحی وب‌سایت محفوظ است.</p>
       </div>
     </footer>
