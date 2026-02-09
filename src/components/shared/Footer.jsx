@@ -3,7 +3,7 @@ import Logo from "../ui/Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4B2E2E] text-white lg:px-16 max-sm:px-4 md:px-5 max-md:px-9 py-10 max-sm:py-4">
+    <footer className="bg-[#532b10] text-white lg:px-16 max-sm:px-4 md:px-5 max-md:px-9 py-10 max-sm:py-4">
       <div className="max-w-7xl flex max-sm:flex-col gap-10  mx-auto ">
 
         {/* لوگو و توضیحات */}

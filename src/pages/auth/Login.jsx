@@ -2,6 +2,7 @@ import Input from '../../components/ui/Input'
 import { useNavigate } from 'react-router-dom'
 import img from "../../images/herobg.jpg"
 import SimpleButton from '../../components/ui/SimpleButton'
+import Check from '../../components/ui/Check'
 
 function Login() {
   const navigate = useNavigate()
@@ -21,9 +22,8 @@ function Login() {
             <Input lable={'Password'} placeholder={"Password..."} type='password' icon={'mdi:password-outline'} />
           </div>
           <div className='pt-5 flex items-center justify-between'>
-            <div className='flex items-center p-0 -ml-3'>
-               <input type="checkbox" className='w-10 bg-[#43210aeb]' name="" id="" />
-               <span className='text-[#43210aeb] text-sm font-semibold'>Remember me</span>
+            <div className='flex items-center p-0 '>
+               <Check option={"Remember me"}/>
             </div>
             <h2 className='text-sm text-[#43210aeb] font-semibold darkgreen cursor-pointer'>Forgot password?</h2>
           </div>

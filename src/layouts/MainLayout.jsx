@@ -12,6 +12,7 @@ function MainLayout() {
       <TopHeader />
       <Header />
       <div className="w-full ">
+        
         <AppRoutes />
       </div>
       <Footer/>
