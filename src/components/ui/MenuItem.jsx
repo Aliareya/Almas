@@ -12,8 +12,8 @@ function MenuItem({ menu }) {
       transition={{ type: "spring", stiffness: 300 }}
       className="list-none"
     >
-      <li
-        onClick={()=>navigate(menu.path)}
+      <p
+        onClick={()=>navigate(`${menu.path}`)}
         className={`
           relative
           cursor-pointer
@@ -42,7 +42,7 @@ function MenuItem({ menu }) {
             group-hover:scale-x-100
           `}
         />
-      </li>
+      </p>
     </motion.li>
   )
 }

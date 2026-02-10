@@ -14,6 +14,7 @@ function Menu() {
           <>
             {menu.path === "/login" ? (
               <SimpleButton 
+                 key={index}
                  click={()=>navigate('/login')}
                  label={menu.title} 
                  customClass={"!py-1 !pb-2 !px-5"} />
