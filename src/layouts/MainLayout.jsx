@@ -8,7 +8,7 @@ import Footer from "../components/shared/Footer";
 
 function MainLayout() {
   return (
-    <div className="w-full bg-[#dfd6d0]  ">
+    <div className="w-full   ">
       <TopHeader />
       <Header />
       <div className="w-full ">

@@ -39,8 +39,8 @@ function Sidebar({ FiletrProducts }) {
   };
 
   return (
-    <div className="xl:w-[25%] md:w-full max-md:w-full max-sm:w-full h-auto bg-[#efe7e2] rounded-lg shadow-md p-5">
-      <div className="w-full h-fit">
+    <div className="xl:w-[25%] lg:w-[30%] md:w-full max-md:w-full max-sm:w-full h-auto bg-gray-100 rounded-lg shadow-md p-5">
+      <div className="w-full  h-fit">
         <h1 className="text-base font-bold">What Are You Looking For</h1>
         <div className="w-full flex h-9 bg-[#72533e2e] rounded-lg items-center justify-between px-2 mt-4">
           <Search search={handleSearchChange} />

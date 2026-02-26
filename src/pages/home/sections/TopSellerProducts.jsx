@@ -2,6 +2,7 @@ import ProductCard from "../../../components/cards/ProductCard";
 import img2 from "../../../images/img2.jpg"
 import img3 from "../../../images/img4.jpg"
 import img1 from "../../../images/img1.jpg"
+import Product from "../../../components/cards/Product";
 
 const products = [
   {
@@ -60,10 +61,10 @@ export default function TopSellerProducts() {
       
 
       {/* Products */}
-      <div className="flex max-sm:flex-col max-md:grid grid-cols-3 max-sm:flex max-md:flex-col justify-between gap-5">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 md:gap-y-5 max-sm:gap-y-5 gap-x-10">
         {products.map((product , index)=>{
           return(
-            <ProductCard key={index} product={product}/>
+            <Product key={index} product={product}/>
           )
         })}
 

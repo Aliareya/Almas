@@ -13,7 +13,7 @@ function Topbar({style , setstyle , sort , handlesort}) {
 
 
   return (
-    <div className="w-full h-16 flex items-center justify-between mb-4 bg-white px-4 rounded-lg">
+    <div className="w-full h-16 flex items-center justify-between mb-4 bg-gray-100 px-4 rounded-lg">
           <div className="w-[50%] max-sm:w-full h-full flex items-center justify-start sm:gap-1 gap-3">
             <SelectBox label={"Sort By"} opt={sortOptions} onChange={handlesort} value={sort} />
           </div>

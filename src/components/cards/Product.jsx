@@ -1,110 +1,73 @@
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
-import img from "../../images/img1.jpg";
-import AnimationTitle from "../ui/AnimationTitle";
-import AnimationText from "../ui/AnimationText";
+import img1 from "../../images/img1.jpg";
 
-export default function ProductCard() {
+const Product = () => {
   return (
-    <motion.div
-      dir="rtl"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full max-sm:w-full p-3 bg-[#efe7e2] rounded-2xl overflow-hidden shadow-xl text-black font-sans"
-    >
+    <div className="w-full bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden font-sans">
       
-      {/* Image */}
-      <div className="relative group overflow-hidden rounded-xl">
-        <motion.img
-          src={img}
-          alt="کت رسمی زنانه بوردو"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.4 }}
-          className="w-full h-[230px] object-cover rounded-xl"
+      {/* Image Section */}
+      <div className="relative h-52 bg-gray-100 group">
+        {/* Product Image */}
+        <img 
+          src={img1} 
+          alt="Blue Chair" 
+          className="w-full h-full object-cover"
         />
 
+        {/* Wishlist Button */}
+        <button className="absolute bottom-4 hover:text-red-950 right-4 bg-white text-gray-400 w-9 h-9 rounded-full flex items-center justify-center shadow-md transition-all duration-200">
+          <Icon icon="heroicons:heart" className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Content Section */}
+      <div className="p-3 pt-4 pb-4">
+         {/* Title */}
+        <h3 className="text-gray-800 text-right hover:text-[#5f3b22d0] cursor-pointer text-base font-semibold">
+          مانتو شیک پاییزه با طرح گل‌ دار
+        </h3>
         {/* Rating */}
-        <div className="absolute top-3 right-3 bg-black/70 text-[#d4a53a] text-xs px-2 py-1 rounded-md flex items-center gap-1">
-          ★★★★☆
-          <span className="text-white">(۶۷)</span>
-        </div>
+        <div className="flex items-center justify-between my-2">
+          <div className='flex items-center justify-end gap-1 my-2'>
 
-        {/* Icons */}
-        <div className="absolute top-3 left-3 flex gap-2">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="bg-black/60 p-2 rounded-full hover:bg-black transition"
-          >
-            <Icon icon="mdi:heart-outline" width="18" className="text-white" />
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="bg-black/60 p-2 rounded-full hover:bg-black transition"
-          >
-            <Icon icon="mdi:cart-outline" width="18" className="text-white" />
-          </motion.button>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="relative mt-3 space-y-3 text-right">
-
-        {/* Price */}
-        <div className="absolute rounded-lg left-2 -top-8 flex bg-[#c17632] py-2 px-5 items-center gap-2">
-          <span className="text-sm font-bold text-white">۸۹۰$</span>
-        </div>
-
-        {/* Title */}
-        <AnimationText text={'لباس مجلسی'}/>
-        {/* <h3 className="text-base font-semibold leading-snug">
-          کت رسمی زنانه بوردو
-        </h3> */}
-
-        {/* Sizes */}
-        <div className="flex items-center justify-between">
-          <span className="font-semibold text-sm text-[#532b10]">سایز</span>
-          <div className="flex gap-2">
-            {["S", "M", "L", "XL"].map((size) => (
-              <motion.button
-                key={size}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="min-w-[22px] h-6 text-xs border border-gray-400 rounded-md hover:bg-black hover:text-white transition"
-              >
-                {size}
-              </motion.button>
-            ))}
+          {[1, 2, 3, 4, 5].map((star) => (
+            <Icon 
+            key={star} 
+            icon="heroicons:star-solid" 
+            className="w-4 h-4 text-yellow-400" 
+            />
+          ))}
+          <span className="text-xs text-gray-400 ml-2">(45)</span>
+          </div>
+          <div className='flex items-center'>
+            <Icon className='mt-2 -mr-0.5' icon="tabler:currency-afghani" width="15" height="15" />
+            <span className="text-lg font-semibold text-gray-800">
+              300
+            </span>
           </div>
         </div>
 
-        {/* Colors */}
-        <div className="flex items-center justify-between">
-          <span className="font-semibold text-sm text-[#532b10]">رنگ</span>
-          <div className="flex gap-2">
-            {["#6b1e2d", "#000000", "#2c2f4a"].map((color, i) => (
-              <motion.span
-                key={i}
-                whileHover={{ scale: 1.2 }}
-                className="w-5 h-5 rounded-full ring-2 ring-offset-2 ring-transparent hover:ring-black cursor-pointer"
-                style={{ backgroundColor: color }}
-              />
-            ))}
-          </div>
-        </div>
+       
+        {/* Bottom Row: Price & Add Button */}
+        <div className="flex items-center justify-between mt-4">
 
-        {/* Bottom Action */}
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.97 }}
-          className="mt-4 w-full py-1 rounded-md border border-[#7a3b18] text-[#7a3b18] font-semibold hover:bg-[#7a3b18] hover:text-white transition"
-        >
-          جزئیات محصول
-        </motion.button>
+          <button className="bg-[#5f3b22d0] hover:bg-[#5f3b22] text-white px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-colors duration-200">
+            <Icon icon="heroicons:shopping-cart" className="w-4 h-4" />
+            <span>Add</span>
+          </button>
+
+          <button className="pb-2 pt-1 rounded-lg px-5 text-white bg-[#5f3b22d0] hover:bg-[#5f3b22]" >
+            جزییات محصول
+          </button>
+
+          
+          
+          
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
-}
+};
+
+
+export default Product;
