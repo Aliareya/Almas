@@ -61,7 +61,7 @@ export default function TopSellerProducts() {
       
 
       {/* Products */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 md:gap-y-5 max-sm:gap-y-5 gap-x-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 md:gap-y-5 max-md:gap-y-5 max-sm:gap-y-5 gap-x-10">
         {products.map((product , index)=>{
           return(
             <Product key={index} product={product}/>
