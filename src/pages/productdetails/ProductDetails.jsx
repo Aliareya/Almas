@@ -330,6 +330,6 @@ const ProductDetails = () => {
 
 export default ProductDetails;
 
-// Add this ReviewSection component to your file
+
 
 
